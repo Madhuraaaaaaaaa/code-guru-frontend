@@ -62,12 +62,21 @@ export default function Landing() {
               generate code with AI, and deploy instantly. From prototype to production in minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <Button 
+              <Button
                 onClick={handleGetStarted}
-                size="lg" 
+                size="lg"
                 className="text-lg px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
               >
                 Start Building Free
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                onClick={() => window.location.href = '/builder'}
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-4 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+              >
+                Try Builder
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4">
